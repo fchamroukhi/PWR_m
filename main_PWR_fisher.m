@@ -62,7 +62,7 @@ load simulated_time_series;
 
 % model specification
 K = 5;% number of segments
-p = 4; % polynomial degree
+p = 3; % polynomial degree
 
 
 pwr = fit_PWR_fisher(x, y, K, p);

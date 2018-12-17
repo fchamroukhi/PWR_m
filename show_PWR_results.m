@@ -54,7 +54,7 @@ for k=1:K
     segmentk= PWR.stats.mean_function(Ik);
     hold on, plot(t(Ik),segmentk,'r','linewidth',2);
 end
-hold on,plot([t(PWR.param.gammak);t(PWR.param.gammak)],[min(y)-2*std(y) max(y)+2*std(y)],'k--','linewidth',2);
+hold on,plot([t(PWR.param.gammak);t(PWR.param.gammak)],[min(y)-3*std(y) max(y)+3*std(y)],'k--','linewidth',2);
 title('Time series, PWR function, and segmentation')
 ylim([240 600]);
 xlabel('t');ylabel('y');
