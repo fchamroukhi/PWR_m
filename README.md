@@ -8,6 +8,7 @@ by Faicel Chamroukhi Decembre 2008.
 
 % Please cite the following papers for this code:
 
+```
 @article{chamroukhi_et_al_NN2009,
 	Address = {Oxford, UK, UK},
 	Author = {Chamroukhi, F. and Sam\'{e}, A. and Govaert, G. and Aknin, P.},
@@ -20,7 +21,7 @@ by Faicel Chamroukhi Decembre 2008.
 	Title = {Time series modeling by a regression approach based on a latent process},
 	Volume = {22},
 	Year = {2009},
-	url  = {https://chamroukhi.users.lmno.cnrs.fr/papers/Chamroukhi_Neural_Networks_2009.pdf}
+	url  = {https://chamroukhi.com/papers/Chamroukhi_Neural_Networks_2009.pdf}
 	}
 
 @INPROCEEDINGS{Chamroukhi-IJCNN-2009,
@@ -31,7 +32,7 @@ by Faicel Chamroukhi Decembre 2008.
   month = {June},
   pages = {489--496},
   Address = {Atlanta, GA},
- url = {https://chamroukhi.users.lmno.cnrs.fr/papers/chamroukhi_ijcnn2009.pdf}
+ url = {https://chamroukhi.com/papers/chamroukhi_ijcnn2009.pdf}
 }
 
 @article{Chamroukhi-FDA-2018,
@@ -45,7 +46,6 @@ by Faicel Chamroukhi Decembre 2008.
 	url =  {https://chamroukhi.com/papers/MBCC-FDA.pdf}
 	}
 
-
+```
 
 Faicel Chamroukhi Decembre 2008.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
