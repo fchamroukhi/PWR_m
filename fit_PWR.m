@@ -1,4 +1,4 @@
-function PWR = fit_PWR_fisher(x, y, K, p)
+function PWR = fit_PWR(x, y, K, p)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Algorithme de fisher de regression par morceaux pour la parametrisation 
@@ -29,7 +29,7 @@ X = designmatrix(x,p);
 
 tic
 %%% matrice "coût"
-C1 = cost_matrix_PPWR(x, y, p, Lmin);
+C1 = cost_matrix_PWR(x, y, p, Lmin);
 
 %%% dynamic programming
 [Ck, t_est] = dynamic_prog(C1, K);

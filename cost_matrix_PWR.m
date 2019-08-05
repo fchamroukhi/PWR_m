@@ -1,6 +1,6 @@
-function C1 = cost_matrix_PPWR(t, y, p, Lmin)
+function C1 = cost_matrix_PWR(t, y, p, Lmin)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% matJ = cost_matrix_PPWR(t, y, p, Lmni)
+% matJ = cost_matrix_PWR(t, y, p, Lmni)
 % matrice_cout calcule la matrice cout de fisher pour
 % la segmentation du signal
 %   C1(a,b) = sum_{t=a}^{t=b}[log(sigma2)+(xt-mu)^2/sigma2] 
@@ -44,7 +44,7 @@ for a = 0:nl
         beta = inv(X_ab'*X_ab)*X_ab'*yab;
         z = yab - X_ab*beta;
         sigma2 = z'*z/nk;
-        C1(a+1,b)= nk + nk*log(sigma2+eps);% + (z'*z)/sigma2  ;
+        C1(a+1,b)= nk * 0.5*log(2*pi) + nk*0.5*log(sigma2+eps) + (z'*z)/sigma2;
     end
     
 end

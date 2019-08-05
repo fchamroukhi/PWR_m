@@ -56,7 +56,6 @@ for k=1:K
 end
 hold on,plot([t(PWR.param.gammak);t(PWR.param.gammak)],[min(y)-3*std(y) max(y)+3*std(y)],'k--','linewidth',2);
 title('Time series, PWR function, and segmentation')
-ylim([240 600]);
 xlabel('t');ylabel('y');
 ylim(yaxislim);
 

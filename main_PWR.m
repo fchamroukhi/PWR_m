@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % A polynomial piecewise regression model for the optimal segmentation of a
-% time series with regime changes. It uses dynamic programming for the segmentation 
-% and the LSE for the estimation of the regression parameters.
+% time series with regime changes. It uses MLE for the estimation of the regression parameters
+% with dynamic programming for the segmentation 
 %
 % by Faicel Chamroukhi Decembre 2008.
 %
@@ -65,7 +65,7 @@ K = 5;% number of segments
 p = 3; % polynomial degree
 
 
-pwr = fit_PWR_fisher(x, y, K, p);
+pwr = fit_PWR(x, y, K, p);
 
 fprintf('elapsed time = %g\n', pwr.stats.cputime);
 %fprintf('objective value = %f\n',pwr.stats.objective);
@@ -77,7 +77,7 @@ show_PWR_results(x, y, pwr);
 %load real_time_series_1
 load real_time_series_2
 
-pwr = fit_PWR_fisher(x, y, K, p);
+pwr = fit_PWR(x, y, K, p);
 
 fprintf('elapsed time = %g\n', pwr.stats.cputime);
 %fprintf('objective value = %f\n',pwr.stats.objective);
