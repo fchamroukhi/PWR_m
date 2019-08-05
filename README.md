@@ -1,8 +1,8 @@
 PWR
 
 A polynomial piecewise regression model for the optimal segmentation of a
-time series with regime changes. It uses dynamic programming for the segmentation 
-and the LSE for the estimation of the regression parameters.
+time series with regime changes. It uses MLE for the estimation of the regression parameters
+with dynamic programming for the segmentation
 
 by Faicel Chamroukhi Decembre 2008.
 
